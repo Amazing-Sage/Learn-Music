@@ -1,0 +1,138 @@
+/* I learned that the * sets the margin and padding for the whole page! (3/23) */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+/* Full CSS for whole page (3/23)*/
+body {
+  background-color: #a45832;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1 {
+  color: #faf2e9;
+  font-size: 4vh;
+  position:absolute; 
+  top:20%;
+  left:30%;
+}
+/*(4/13)*/
+article {
+  color: #faf2e9;
+  font-size: 4vh;
+}
+
+.column {
+  position:absolute;
+  width: 40vh;
+  height: 60vh;
+  left:30%;
+  top: 30%;
+}
+
+.block {
+  color: #ce916d;
+  width: 800%;
+  height: 500%;
+}
+/* 4/15 */
+
+/* Nav Bar - new concept learned it from tutorial linked in reserch paper (3/23)*/
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  min-width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #ce916d;
+}
+
+/* Nav links (links to other pages) (3/23)*/
+.nav-links {
+  display: flex;
+  background-color: #ce916d;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 120%;
+  width: 90%;
+  position:absolute; 
+  left:3%;
+  top:auto;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #faf2e9;
+  text-decoration: none;
+  letter-spacing: 30;
+  font-weight: bold;
+}
+
+/* google icon for burger (4/13)*/
+
+.material-icons{
+  font-size-adjust:3vh;
+  display: inline-block;
+  word-wrap:normal;
+  color: #faf2e9; 
+  left:10%;
+  top:10%;
+}
+
+
+/* @media makes makes the nave bar for small media screens (3/23) */
+
+/* burger nav bar for small screens (3/24)*/
+@media screen and (max-width:800px) {
+  body{
+    overflow-x:hidden;  
+  }
+  .nav-links {
+    position:absolute;
+    right:0px;
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ce916d;
+    transform: translateX(100%);
+    transition: 0.4s ease-in;
+  }
+  
+  /*added (3/29)*/
+  .nav-links li {
+    opacity:0;
+  }
+
+  
+  .burger{
+    display:block;
+  }
+  
+}
+/* makes the nav bar move full screen (3/29) */
+.nav-active{
+  transform:translateX(0%);
+}
+
+/* nav animation to go back to hide nav bar (3/29) */
+@keyframes navlinkFade{
+  from{
+    opacity:0;
+    transform:translateX(100%);
+  }
+  
+  to{
+    opacity:1;
+    transform:translateX(0%);
+  }
+}
