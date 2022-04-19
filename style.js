@@ -26,3 +26,10 @@ const navSide = () => {
   
   burger.classList.toggle('toggle');
 }
+
+//display multiple pages with one html file//
+
+function show(shown, hidden){
+  document.getElementsById(shown).style.display='block'
+}
+

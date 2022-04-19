@@ -30,6 +30,10 @@ article {
   left:30%;
   top: 30%;
 }
+p{
+  color: #faf2e9;
+  font-size: 4vh;
+}
 
 .block {
   color: #ce916d;
