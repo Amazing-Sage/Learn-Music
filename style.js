@@ -29,7 +29,4 @@ const navSide = () => {
 
 //display multiple pages with one html file//
 
-function show(shown, hidden){
-  document.getElementsById(shown).style.display='block'
-}
 

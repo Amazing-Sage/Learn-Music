@@ -1,7 +1,7 @@
 /* I learned that the * sets the margin and padding for the whole page! (3/23) */
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 /* Full CSS for whole page (3/23)*/
@@ -9,13 +9,21 @@ body {
   background-color: #a45832;
   font-family: "Josefin Sans", sans-serif;
 }
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 h1 {
   color: #faf2e9;
   font-size: 4vh;
-  position:absolute; 
-  top:20%;
-  left:30%;
+}
+
+h2{
+  color: #faf2e9;
+  font-size: 4vh;
+
 }
 /*(4/13)*/
 article {
@@ -44,7 +52,7 @@ p{
 
 /* Nav Bar - new concept learned it from tutorial linked in reserch paper (3/23)*/
 
-nav {
+header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
