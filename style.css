@@ -61,6 +61,7 @@ aside{
   width:50%;
   display: flex;
   justify-content: flex-start;
+  
 }
 .column {
   width: 15em;
@@ -90,6 +91,11 @@ header nav {
   background-color: #ce916d;
 }
 
+.inner-nav{
+  color:#69301A;
+  list-style: square;
+  font-size: 3vh;
+}
 /* Nav links (links to other pages) (3/23)*/
 .nav-links {
   display: flex;
