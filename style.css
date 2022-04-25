@@ -44,9 +44,7 @@ section#home {
   margin: 8em auto;
 }
 
-section:nth-child(even) {
-  flex-direction: column-reverse;
-}
+
 /*(4/13)*/
 article {
   color: #faf2e9;
@@ -61,7 +59,6 @@ aside{
   width:50%;
   display: flex;
   justify-content: flex-start;
-  
 }
 .column {
   width: 15em;
@@ -94,7 +91,7 @@ header nav {
 .inner-nav{
   color:#69301A;
   list-style: square;
-  font-size: 3vh;
+  font-size: 4vmax;
 }
 /* Nav links (links to other pages) (3/23)*/
 .nav-links {
@@ -106,7 +103,6 @@ header nav {
   font-weight: bold;
   font-size: 120%;
   width: 90%;
-  position:absolute; 
   left:3%;
   top:auto;
 }
@@ -122,26 +118,34 @@ header nav {
   font-weight: bold;
 }
 
+/*look over and change*/ 
+.responsive{
+  height:auto;
+  width:100%;
+}
+
 /* google icon for burger (4/13)*/
 
-.material-icons{
+.material-icons {
   font-size-adjust:3vh;
   display: inline-block;
   word-wrap:normal;
   color: #faf2e9; 
   left:10%;
   top:10%;
+  display: hide;
 }
 
 
 /* @media makes makes the nave bar for small media screens (3/23) */
 
 /* burger nav bar for small screens (3/24)*/
-@media screen and (max-width:800px) {
+@media only screen and (max-width:810px) {
   body{
     overflow-x:hidden;  
   }
   .nav-links {
+    
     right:0px;
     height:100%;
     width:100%;
@@ -153,16 +157,32 @@ header nav {
     transition: 0.4s ease-in;
   }
   
-  /*added (3/29)*/
-  .nav-links li {
-    opacity:0;
-  }
-
-  
   .burger{
     display:block;
   }
+
+  .nav-links a {
+    color: #faf2e9;
+    text-decoration: none;
+    letter-spacing: 30;
+    font-weight: bold;
+    flex-direction: column;
+  }
   
+ 
+  .material-icons {
+    font-size-adjust:3vh;
+    display: inline-block;
+    word-wrap:normal;
+    color: #faf2e9; 
+    left:10%;
+    top:10%;
+  }
+
+  aside{
+    flex-direction: column;
+  }
+
 }
 /* makes the nav bar move full screen (3/29) */
 .nav-active{
@@ -181,3 +201,4 @@ header nav {
     transform:translateX(0%);
   }
 }
+
