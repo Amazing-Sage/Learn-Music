@@ -59,6 +59,7 @@ aside{
   width:50%;
   display: flex;
   justify-content: flex-start;
+
 }
 .column {
   width: 15em;
@@ -118,10 +119,20 @@ header nav {
   font-weight: bold;
 }
 
-/*look over and change*/ 
-.responsive{
+/*sizing images and captions*/ 
+.responsive,figcaption{
   height:auto;
-  width:100%;
+  max-width:100%;
+  float:left;
+}
+
+.row{
+  display: flex;
+}
+
+.column{
+  flex:35% ;
+  padding: 25%;
 }
 
 /* google icon for burger (4/13)*/
@@ -135,7 +146,6 @@ header nav {
   top:10%;
   display: hide;
 }
-
 
 /* @media makes makes the nave bar for small media screens (3/23) */
 
