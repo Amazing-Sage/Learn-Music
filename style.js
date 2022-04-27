@@ -18,7 +18,7 @@ const navSide = () => {
 
     link.style.animation = 'navLinks 0.5s ease forwards $(index/7)s';
     
-    consol.log`(index/7 + 0.3)s`;
+    consol.log`(index/7 + 0.7)s`;
     
   });
   
@@ -27,6 +27,6 @@ const navSide = () => {
   burger.classList.toggle('toggle');
 }
 
-//display multiple pages with one html file//
+
 
 
