@@ -136,6 +136,10 @@ header nav {
   padding: 25%;
 }
 
+.home{
+  columns: 1;
+  align-items: center;
+}
 
 
 /* google icon for burger (4/13)*/
