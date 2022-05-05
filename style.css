@@ -114,7 +114,7 @@ header nav {
 .nav-links a {
   color: #faf2e9;
   text-decoration: none;
-  letter-spacing: 30;
+  letter-spacing:3px;
   font-weight: bold;
 }
 
@@ -141,13 +141,13 @@ header nav {
 /* google icon for burger (4/13)*/
 
 .material-icons {
-  font-size-adjust:50px;
+  font-size:50px;
   display: inline-block;
   word-wrap:normal;
   color: #faf2e9; 
   left:10%;
   top:10%;
-  display: hide;
+  display:none;
 }
 
 /* @media makes makes the nave bar for small media screens (3/23) */
@@ -177,14 +177,14 @@ header nav {
   .nav-links a {
     color: #faf2e9;
     text-decoration: none;
-    letter-spacing: 30;
+    letter-spacing:30px;
     font-weight: bold;
     flex-direction: column;
   }
   
  
   .material-icons {
-    font-size-adjust:3vh;
+    font-size:3vh;
     display: inline-block;
     word-wrap:normal;
     color: #faf2e9; 
