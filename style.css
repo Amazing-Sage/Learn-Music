@@ -78,7 +78,7 @@ p{
 
 /* Nav Bar - new concept learned it from tutorial linked in reserch paper (3/23)*/
 
-header nav {
+.header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -108,14 +108,17 @@ header nav {
 }
 
 .nav-links li {
-  list-style: none;
+  list-style-type: none;
+  display: inline;
 }
 
-.nav-links a {
+.menu-item {
   color: #faf2e9;
   text-decoration: none;
   letter-spacing:3px;
   font-weight: bold;
+  list-style-type: none;
+
 }
 
 /*sizing images and captions*/ 
@@ -144,7 +147,7 @@ header nav {
   word-wrap:normal;
   color: #faf2e9; 
   left:10%;
-  top:10%;
+  top:auto;
   display:none;
 }
 
