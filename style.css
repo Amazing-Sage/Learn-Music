@@ -28,6 +28,13 @@ h2{
 
 }
 
+h3{
+  color: #faf2e9;
+  font-size: 4vh;
+  margin-top:1em ;
+  margin-bottom: 0;
+}
+
 figcaption{
   color:#69301A;
   font-size: 1.5vh;
